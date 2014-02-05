@@ -21,8 +21,9 @@ namespace Personal_Website
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/foundation/foudnation.min.css",
-                      "~/Content/site.css"));
+                        "~/foundation/normalize.min.css",
+                        "~/foundation/foundation.min.css",
+                        "~/Content/site.css"));
         }
     }
 }
