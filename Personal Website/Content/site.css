@@ -1,2 +1,105 @@
-﻿body {
+﻿
+@font-face {
+    font-family: 'Source Sans';
+    src: url('../fonts/sourcesanspro-regular-webfont.eot');
+    src: url('../fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg') url('../fonts/sourcesanspro-regular-webfont.woff') format('woff'), url('../fonts/sourcesanspro-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+#hero1 {
+    background: url('../images/hero1.jpg');
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero2 {
+    background: url('../images/hero2.jpg');
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero, .content {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.inner {
+    min-height: 500px;
+    position: relative;
+}
+
+/*.hero .inner{
+  background: rgba(0,0,0,0.7) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;}*/
+
+
+.copy {
+    width: 100%;
+}
+
+.hero h1, .hero p {
+    color: #fff;
+}
+
+.content h1, .content p {
+    color: #333;
+}
+
+h1 {
+    margin: 0px;
+    font-family: 'Source Sans', serif;
+    font-weight: 400;
+    padding: 0px 20px;
+}
+
+p {
+    font-family: 'Source Sans', sans-serif;
+    font-size: 14px;
+    padding: 0px 20px;
+}
+
+/* small screens only */
+@media only screen and (max-width: 40.063em) {
+}
+
+/* Medium Displays: 641px and up */
+@media only screen and (min-width: 40.063em) {
+}
+
+/* Large Displays: 1024px and up */
+@media only screen and (min-width: 64.063em) {
+    #hero1 {
+        background-attachment: fixed;
+    }
+
+    #hero2 {
+        background-attachment: fixed;
+    }
+}
+
+/* X-Large Displays: 1441 and up */
+@media only screen and (min-width: 90.063em) {
+}
+
+/* XX-Large Displays: 1920 and up */
+@media only screen and (min-width: 120.063em) {
 }
